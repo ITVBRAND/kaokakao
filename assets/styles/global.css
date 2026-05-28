@@ -1,0 +1,56 @@
+@import url(./components/normalize.css);
+@import url(./components/fonts.css);
+@import url(./components/color.css);
+@import url(./components/buttons.css);
+@import url(./components/input.css);
+@import url(./components/header.css);
+@import url(./components/footer.css);
+@import url(./components/amimation.css);
+
+body {
+    background-color: var(--clr-milk);
+}
+
+img {
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: calc(1400 / 1440 * 100vw);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: calc(120 / 1440 * 100vw) 0 calc(20 / 1440 * 100vw);
+    gap: calc(50 / 1440 * 100vw);
+}
+
+@media screen and (max-width: 1400px) {
+
+    .container {
+        max-width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .section {
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .section {
+        padding: 50px 0 20px;
+        gap: 30px;
+    }
+
+}

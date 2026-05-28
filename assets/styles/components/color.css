@@ -1,0 +1,48 @@
+:root {
+
+    /*brand-colors-start*/
+
+    --clr-white: #FFFFFF;
+    --clr-light-gray: #D2D2D7;
+    --clr-gray: #808080;
+    --clr-black: #121212;
+    --clr-terkot: #B93F18;
+    --clr-light-green: #C5C100;
+    --clr-dark-green: #1B2B19;
+    --clr-milk: #F9F4F1;
+
+    /*brand-colors-end*/
+
+}
+
+.white {
+    color: var(--clr-white);
+}
+
+.black {
+    color: var(--clr-black);
+}
+
+.light-green {
+    color: var(--clr-light-green);
+}
+
+.terkot {
+    color: var(--clr-terkot);
+}
+
+.milk {
+    background-color: var(--clr-milk);
+}
+
+.dark-green {
+    background-color: var(--clr-dark-green);
+}
+
+.light-gray {
+    color: var(--clr-light-gray);
+}
+
+.gray {
+    color: var(--clr-gray);
+}

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/home.css">
+    <title>Главная - каокакао</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header-logo fade-up">
+            <img src="assets/images/logo.svg" alt="logo" class="header-logo-image">
+        </a>
+        <nav class="header-nav">
+            <a href="#" class="header-link link black fade-up">
+                Главная
+            </a>
+            <a href="#" class="header-link link black fade-up">
+                О компании
+            </a>
+            <a href="#" class="header-link link black fade-up">
+                Каталог
+            </a>
+            <a href="#" class="header-link link black fade-up">
+                Партнерам
+            </a>
+            <a href="#" class="header-link link black fade-up">
+                Блог
+            </a>
+            <a href="#" class="header-link link black fade-up">
+                Контакты
+            </a>
+        </nav>
+        <div class="header-dropdown fade-up">
+            <p class="header-dropdown__title link black">
+                +7 (800) 302 62-63
+            </p>
+            <div class="header-dropdown__modal">
+                <div class="header-dropdown__list">
+                    <div class="header-dropdown__item">
+                        <p class="header-dropdown__item title heading-h6 gray">
+                            Телефон:
+                        </p>
+                        <a href="tel:+78003026263" class="header-dropdown__item body black">
+                            +7 (800) 302 62-63
+                        </a>
+                    </div>
+                    <div class="header-dropdown__item">
+                        <p class="header-dropdown__item title heading-h6 gray">
+                            Email:
+                        </p>
+                        <a href="mailto:hello@kao-kakao.ru" class="header-dropdown__item body black">
+                            hello@kao-kakao.ru
+                        </a>
+                    </div>
+                    <div class="header-dropdown__item">
+                        <p class="header-dropdown__item title heading-h6 gray">
+                            Адрес:
+                        </p>
+                        <a href="ya.ru" class="header-dropdown__item body black" target="_blank">
+                            г. Ростов-на-Дону, ул. Текучева, 207Ж, каб. 111
+                        </a>
+                    </div>
+                </div>
+                <div class="header-dropdown__social">
+                    <p class="dropdown-social__title heading-h6 gray">
+                        Мы в соц. сетях:
+                    </p>
+                    <div class="dropdown-social__list">
+                        <a href="#" class="dropdown-social__item">
+                            <img src="assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
+                        </a>
+                        <a href="#" class="dropdown-social__item">
+                            <img src="assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="header-burger__btn">
+            <img src="assets/icons/burger.svg" alt="burger" class="header-burger__btn-image">
+        </button>
+    </header>
+
+    <div class="burger-modal">
+        <div class="burger-header">
+            <a href="/" class="header-logo">
+                <img src="assets/images/logo.svg" alt="logo" class="header-logo-image">
+            </a>
+            <button class="burger-close">
+                <img src="assets/icons/close.svg" alt="close" class="burger-close__image">
+            </button>
+        </div>
+        <div class="burger-content">
+            <div class="search-wrap">
+                <input type="text" class="search-input button" placeholder="Поиск">
+                <button class="search-btn">
+                    <img src="assets/icons/search.svg" alt="search" class="search-btn__image">
+                </button>
+            </div>
+            <nav class="burger-nav">
+                <a href="#" class="burger-nav__link link black">
+                    Главная
+                </a>
+                <a href="#" class="burger-nav__link link black">
+                    О компании
+                </a>
+                <a href="#" class="burger-nav__link link black">
+                    Каталог
+                </a>
+                <a href="#" class="burger-nav__link link black">
+                    Партнерам
+                </a>
+                <a href="#" class="burger-nav__link link black">
+                    Блог
+                </a>
+                <a href="#" class="burger-nav__link link black">
+                    Контакты
+                </a>
+            </nav>
+            <div class="burger__list">
+                <div class="header-dropdown__item">
+                    <p class="header-dropdown__item title heading-h6 white">
+                        Телефон:
+                    </p>
+                    <a href="tel:+78003026263" class="header-dropdown__item body white">
+                        +7 (800) 302 62-63
+                    </a>
+                </div>
+                <div class="header-dropdown__item">
+                    <p class="header-dropdown__item title heading-h6 white">
+                        Email:
+                    </p>
+                    <a href="mailto:hello@kao-kakao.ru" class="header-dropdown__item body white">
+                        hello@kao-kakao.ru
+                    </a>
+                </div>
+                <div class="header-dropdown__item">
+                    <p class="header-dropdown__item title heading-h6 white">
+                        Адрес:
+                    </p>
+                    <a href="ya.ru" class="header-dropdown__item body white" target="_blank">
+                        г. Ростов-на-Дону, ул. Текучева, 207Ж, каб. 111
+                    </a>
+                </div>
+            </div>
+            <div class="burger__social">
+                <p class="dropdown-social__title heading-h6 white">
+                    Мы в соц. сетях:
+                </p>
+                <div class="dropdown-social__list">
+                    <a href="#" class="burger-social__item">
+                        <img src="assets/icons/tg-reverse.svg" alt="instagram" class="burger-item__image">
+                    </a>
+                    <a href="#" class="burger-social__item">
+                        <img src="assets/icons/vk-reverse.svg" alt="facebook" class="burger-item__image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="hero">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper hero-swiper-wrapper">
+                    <div class="swiper-slide hero-slide">
+                        <img src="assets/images/hero-1.png" alt="hero" class="hero-image">
+                    </div>
+                    <div class="swiper-slide hero-slide">
+                        <img src="assets/images/hero-2.png" alt="hero" class="hero-image">
+                    </div>
+                    <div class="swiper-slide hero-slide">
+                        <img src="assets/images/hero-1.png" alt="hero" class="hero-image">
+                    </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title heading-h1 black fade-up">
+                    ПРОИЗВОДИМ БРЕНДИРОВАННЫЙ ШОКОЛАД<br>С 2015 года
+                </h1>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <p class="hero-item__text subtitle black fade-up">
+                            Реализовали более 3500 проектов
+                        </p>
+                    </li>
+                    <li class="hero-item">
+                        <p class="hero-item__text subtitle black fade-up">
+                            Забрендировали 120 тонн шоколада
+                        </p>
+                    </li>
+                    <li class="hero-item">
+                        <p class="hero-item__text subtitle black fade-up">
+                            Каждый 7-й житель РФ пробовал наш шоколад
+                        </p>
+                    </li>
+                </ul>
+                <button class="hero-btn btn button terkot-button">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+        <section class="product-section section">
+            <h2 class="product-section__title heading-h2 black fade-up">
+                Шокалад с логотипом
+            </h2>
+            <div class="product-list">
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                            <div class="product-item__tab black caption">
+                                50%
+                            </div>
+                            <div class="product-item__tab black caption">
+                                Хит
+                            </div>
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                            <div class="product-item__tab black caption">
+                                50%
+                            </div>
+                            <div class="product-item__tab black caption">
+                                Хит
+                            </div>
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                            <div class="product-item__tab black caption">
+                                Хит
+                            </div>
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                            <div class="product-item__tab black caption">
+                                50%
+                            </div>
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                            <div class="product-item__tab black caption">
+                                50%
+                            </div>
+                            <div class="product-item__tab black caption">
+                                Хит
+                            </div>
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="product-item fade-up">
+                    <div class="product-item__picture">
+                        <div class="product-item__tabs">
+                        </div>
+                        <img src="assets/images/product_example.jpg" alt="product" class="product-item__image">
+                    </div>
+                    <div class="product-article">
+                        <p class="product-article__cat caption black">
+                            Категория шоколада
+                        </p>
+                        <h3 class="product-title black heading-h6">
+                            Шоколад 5гр.
+                        </h3>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-price__primary subtitle terkot">
+                            от <span>5.5</span> ₽
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product-wrap">
+                <a href="#" class="btn button terkot-button">Смотреть все товары</a>
+            </div>
+        </section>
+        <section class="section start_pack-section">
+            <h2 class="product-section__title heading-h2 black fade-up">
+                Собери свой стартовый набор
+            </h2>
+            <div class="start_pack-gallery fade-up">
+                <div class="start_pack-gallery__item">
+                    <img src="assets/images/starter_pack_example_1.jpg" alt="product" class="start_pack-gallery__item-image">
+                </div>
+                <div class="start_pack-gallery__item">
+                    <img src="assets/images/starter_pack_example_2.jpg" alt="product" class="start_pack-gallery__item-image">
+                </div>
+                <div class="start_pack-gallery__item">
+                    <img src="assets/images/starter_pack_example_1.jpg" alt="product" class="start_pack-gallery__item-image">
+                </div>
+                <div class="start_pack-gallery__item">
+                    <img src="assets/images/starter_pack_example_2.jpg" alt="product" class="start_pack-gallery__item-image">
+                </div>
+                <div class="start_pack-controller">
+                    <button class="start_pack-controller__btn btn button green-button">
+                        s
+                    </button>
+                    <button class="start_pack-controller__btn btn button green-button">
+                        m
+                    </button>
+                    <button class="start_pack-controller__btn btn button green-button">
+                        l
+                    </button>
+                    <button class="start_pack-controller__btn btn button green-button">
+                        xl
+                    </button>
+                </div>
+                <div class="start_pack-wrap">
+                    <button class="btn button terkot-button">
+                        Оформить заказ
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section offer-section">
+            <h2 class="offer-section__title heading-h2 black fade-up">
+                Специальные предложения
+            </h2>
+            <div class="offer-list">
+                <div class="offer-item fade-up">
+                    <div class="offer-item__picture">
+                        <img src="assets/images/special_one.jpg" alt="offer" class="offer-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h6 black">
+                            Акция
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Получите в подарок до 100 брендированных шоколадок при заказе от 2000 рублей
+                        </p>
+                        <a href="#" class="btn button terkot-button offer-item__btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="offer-item fade-up">
+                    <div class="offer-item__picture">
+                        <img src="assets/images/special_two.jpg" alt="offer" class="offer-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h6 black">
+                            Акция
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Получите в подарок до 100 брендированных шоколадок при заказе от 2000 рублей
+                        </p>
+                        <a href="#" class="btn button terkot-button offer-item__btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about-section">
+            <div class="about-wrap">
+                <picture class="about-picture">
+                    <source media="(max-width: 768px)" srcset="assets/images/about_bg_mob.jpg">
+                    <img src="assets/images/about_bg.png" alt="about" class="about-image">
+                </picture>
+                <article class="about-content">
+                    <h2 class="about-title heading-h2 black fade-up">
+                        О компании
+                    </h2>
+                    <p class="about-text body black fade-up">
+                        Шоколад c логотипом для вашей компании. Сделано по ГОСТу, сертификаты качества. Любой дизайн по Вашим пожеланиям. Шоколад без добавок и пальмового масла. Любые форматы шоколадных наборов
+                    </p>
+                    <a href="#" class="btn button terkot-button about-btn">Подробнее</a>
+                </article>
+            </div>
+        </section>
+        <section class="section clients-section">
+            <article class="section-article">
+                <h2 class="clients-section__title heading-h2 black fade-up">
+                    Наши клиенты
+                </h2>
+                <div class="clients-section__wrap">
+                    <p class="clients-section__text body black fade-up">
+                        Выполняем более 120 заказов в месяц для заказчиков по всей стране.
+                    </p>
+                </div>
+            </article>
+            <div class="map__picture fade-up">    
+                <img src="assets/images/map.png" alt="карта продаж" class="map__img map__img--base">
+                <img src="assets/images/map_mask.png" alt="маска карты продаж" class="map__img map__img--overlay">
+            </div>
+            <div class="logo-carousel fade-up">
+                <div class="logo-track" id="logo-track">
+                    <!-- Иконки будут вставлены через JS -->
+                </div>
+            </div>
+        </section>
+        <section class="section payment-section">
+            <article class="section-article">
+                <h2 class="clients-section__title heading-h2 black fade-up">
+                    Условия, оплата и доставка
+                </h2>
+                <div class="clients-section__wrap">
+                    <p class="clients-section__text body black fade-up">
+                        Заказы до 2.000 шоколадок, можем произвести и отправить в течении 24 часов с момента согласования дизайн-макета.<br>
+                        <br>Москва/Ростов/Воронеж/Краснодар - сегодня заказали - завтра получили.
+                    </p>
+                </div>
+            </article>
+            <div class="payment-list">
+                <div class="offer-item fade-up">
+                    <div class="offer-item__picture">
+                        <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Сроки
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Получите в подарок до 100 брендированных шоколадок при заказе от 2000 рублей
+                        </p>
+                        <a href="#" class="btn button terkot-button offer-item__btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="offer-item fade-up">
+                    <div class="offer-item__picture">
+                        <img src="assets/images/payment_2.jpg" alt="offer" class="offer-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Оплата
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Получите в подарок до 100 брендированных шоколадок при заказе от 2000 рублей
+                        </p>
+                        <a href="#" class="btn button terkot-button offer-item__btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="offer-item fade-up">
+                    <div class="offer-item__picture">
+                        <img src="assets/images/payment_3.jpg" alt="offer" class="offer-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Доставка
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Получите в подарок до 100 брендированных шоколадок при заказе от 2000 рублей
+                        </p>
+                        <a href="#" class="btn button terkot-button offer-item__btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section serf-section">
+            <h2 class="serf-section__title heading-h2 black fade-up">
+                Сертификация нашего качества
+            </h2>
+            <div class="sert-container">
+                <div class="sert-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- ТОЛЬКО КАРТИНКИ внутри слайдов -->
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_1.jpg" alt="Горы"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_2.jpg" alt="Озеро"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_3.jpg" alt="Цветы"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_4.jpg" alt="Поле"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_1.jpg" alt="Водопад"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_2.jpg" alt="Листва"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_3.jpg" alt="Закат"></div>
+                        <div class="sert-slide swiper-slide"><img src="assets/images/sert_4.jpg" alt="Город"></div>
+                    </div>
+                    <!-- Кастомные стрелки -->
+                    <div class="sert-button-next"></div>
+                    <div class="sert-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+
+        </section>
+        <section class="section case-section">
+            <div class="case-wrap">
+                <h2 class="clients-section__title heading-h2 black fade-up">
+                    Блог
+                </h2>
+                <div class="case-category">
+                    <button class="case-category__item btn button border-button active">
+                        Все
+                    </button>
+                    <button class="case-category__item btn button border-button">
+                        Кейсы
+                    </button>
+                    <button class="case-category__item btn button border-button">
+                        Статьи
+                    </button>
+                </div>
+            </div>
+            <div class="payment-list case-list">
+                <a href="#" class="offer-item fade-up">
+                    <div class="offer-item__picture case-item__picture">
+                        <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Тема статьи
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Краткое описание статьи
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="offer-item fade-up">
+                    <div class="offer-item__picture case-item__picture">
+                        <img src="assets/images/payment_2.jpg" alt="offer" class="offer-item__image case-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Тема статьи
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Краткое описание статьи
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="offer-item fade-up">
+                    <div class="offer-item__picture case-item__picture">
+                        <img src="assets/images/payment_3.jpg" alt="offer" class="offer-item__image case-item__image">
+                    </div>
+                    <div class="offer-item__content">
+                        <h3 class="offer-item__title heading-h4 black">
+                            Тема статьи
+                        </h3>
+                        <p class="offer-item__text body black">
+                            Краткое описание статьи
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-content-wrap">
+                    <div class="footer-contact">
+                        <h4 class="footer-contact__title heading-h5 black fade-up">
+                            Контакты
+                        </h4>
+                        <nav class="footer-nav">
+                            <a href="#" class="footer-nav__link link black fade-up">
+                                г. Ростов-на-Дону, ул. Текучева, 207Ж, к. 111
+                            </a>
+                            <a href="tel:+78003026263" class="footer-nav__link link black fade-up">
+                                +7 (800) 302 62-63
+                            </a>
+                            <a href="#" class="footer-nav__link link black fade-up">
+                                hello@kao-kakao.ru
+                            </a>
+                        </nav>
+                        <div class="footer-social">
+                            <p class="dropdown-social__title heading-h6 black fade-up">
+                                Мы в соц. сетях:
+                            </p>
+                            <div class="dropdown-social__list">
+                                <a href="#" class="dropdown-social__item footer-social__item fade-up">
+                                    <img src="assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
+                                </a>
+                                <a href="#" class="dropdown-social__item footer-social__item fade-up">
+                                    <img src="assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-menu__wrap">
+                            <h4 class="footer-menu__title heading-h5 black fade-up">
+                                Каталог
+                            </h4>
+                            <nav class="footer-nav">
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Шоколад порционный
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Шоколад с полиграфией
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Шоколадные наборы
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Шоколадные наборы
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Сахар
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Леденцы
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="footer-menu__wrap">
+                            <h4 class="footer-menu__title heading-h5 black fade-up">
+                                О нас
+                            </h4>
+                            <nav class="footer-nav">
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    История бренда
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Блог
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Услуги
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="footer-menu__wrap">
+                            <h4 class="footer-menu__title heading-h5 black fade-up">
+                                Документация
+                            </h4>
+                            <nav class="footer-nav">
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Политика конфиденциальности
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Согласие на обработку персональных данных
+                                </a>
+                                <a href="#" class="footer-nav__link link black fade-up">
+                                    Согласие на куки
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrap">
+                    <img src="assets/icons/footer-logo.svg" alt="footer-logo" class="footer-bottom__image  fade-up">
+                    <div class="footer-bottom__nav">
+                        <p class="footer-bottom__text body black fade-up">
+                            2026 Copyright &copy; Каокакао все права защищены<br>
+                            <a class="black" href="https//:vbrand.ru">Сайт разработан V-Brand</a>
+                        </p>
+                        <p class="footer-bottom__text body black fade-up">
+                            ООО "Као-Какао"<br>
+                            ИНН 616110611415<br>
+                            ОГРНИП 315619600033641
+                        </p>
+                        <p class="footer-bottom__text body black fade-up">
+                            Регистрационный номер 17439/61 от 21.05.2025.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/header.js"></script>
+    <script src="assets/scripts/animation.js"></script>
+    <script src="assets/scripts/textWalker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/hero.js"></script>
+    <script src="assets/scripts/sertSwiper.js"></script>
+    <script src="assets/scripts/homeStarterPack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>
+    <script src="assets/scripts/map.js"></script>
+    <script src="assets/scripts/infinityScroll.js"></script>
+</body>
+</html>
