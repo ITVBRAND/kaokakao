@@ -1,3 +1,109 @@
+/*global-form*/
+
+.global-form__item {
+    margin-bottom: calc(10 / 1440 * 100vw);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(10 / 1440 * 100vw);
+}
+
+.global-form__input {
+    padding: calc(17 / 1440 * 100vw) calc(20 / 1440 * 100vw);
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: calc(60 / 1440 * 100vw);
+    background: var(--clr-white);
+    border: none;
+    box-sizing: border-box;
+}
+
+.global-form__input:focus {
+    outline: 1px solid var(--clr-gray);
+}
+
+.error-input {
+    padding: calc(5 / 1440 * 100vw);
+
+    color: var(--clr-white);
+    text-decoration: underline;
+}
+
+.global-form__checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-gray);
+    border-radius: 4px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    top: -1px;
+}
+
+.global-form__checkbox:checked {
+    background-color: var(--clr-tektor);
+    border-color: var(--clr-tektor);
+}
+
+.global-form__checkbox:checked::after {
+    content: "✓";
+    position: absolute;
+    color: var(--clr-white);
+    font-size: 13px;
+    font-weight: normal;
+    left: 2px;
+    top: -2px;
+}
+
+.global-form__checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--clr-light-green);
+}
+
+.global-form__label:hover .global-form__checkbox {
+    border-color: var(--clr-tektor);
+}
+
+.privacy-link {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .global-form__item {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    
+    .global-form__input {
+        padding: 17px 20px;
+        border-radius: 60px;
+    }
+    
+    .error-input {
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .global-form__item {
+        margin-bottom: 8px;
+    }
+}
+
 /*search*/
 
 @media screen and (max-width: 768px) {

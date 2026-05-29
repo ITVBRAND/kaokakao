@@ -34,6 +34,7 @@
 
 .header-dropdown {
     position: relative;
+    z-index: 50;
 
     box-sizing: border-box;
 }
@@ -69,16 +70,17 @@
 }
 
 .header-dropdown__modal {
-    position: fixed;
-    top: calc(80 / 1440 * 100vw);
-    right: calc(20 / 1440 * 100vw);
+    position: absolute;
+    top: 100%;
+    right: 0;
 
-    max-width: 305px;
+    width: 305px;
+    min-width: 305px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     gap: calc(10 / 1440 * 100vw);
 
     opacity: 0;
@@ -87,8 +89,16 @@
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.header-dropdown:hover .header-dropdown__modal,
-.header-dropdown__modal:hover {
+.header-dropdown__modal::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: calc(12 / 1440 * 100vw);
+}
+
+.header-dropdown:hover .header-dropdown__modal {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -96,27 +106,38 @@
 
 .header-dropdown__list {
     padding: calc(20 / 1440 * 100vw);
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     gap: calc(20 / 1440 * 100vw);
 
     background-color: var(--clr-white);
     border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
 }
 
-.header-dropdown__item {
+.header-dropdown__list > .header-dropdown__item,
+.burger__list > .header-dropdown__item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: calc(10 / 1440 * 100vw);
+    width: 100%;
 }
 
 .header-dropdown__item.title {
+    display: block;
     margin: 0;
+    width: 100%;
+}
+
+.header-dropdown__item.body {
+    display: block;
+    width: 100%;
 }
 
 .header-dropdown__social {
@@ -186,7 +207,8 @@
         display: none;
     }
 
-    .header-dropdown__item {
+    .header-dropdown__list > .header-dropdown__item,
+    .burger__list > .header-dropdown__item {
         gap: 10px;
     }
 

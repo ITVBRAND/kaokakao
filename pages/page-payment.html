@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/global.css">
-    <title>Продукт - каокакао</title>
+    <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="../assets/styles/payment.css">
+    <title>Условия/оплата/Доставка - каокакао</title>
 </head>
 <body>
     <header class="header">
         <a href="/" class="header-logo fade-up">
-            <img src="assets/images/logo.svg" alt="logo" class="header-logo-image">
+            <img src="../assets/images/logo.svg" alt="logo" class="header-logo-image">
         </a>
         <nav class="header-nav">
             <a href="#" class="header-link link black fade-up">
@@ -68,10 +69,10 @@
                     </p>
                     <div class="dropdown-social__list">
                         <a href="#" class="dropdown-social__item">
-                            <img src="assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
+                            <img src="../assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
                         </a>
                         <a href="#" class="dropdown-social__item">
-                            <img src="assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
+                            <img src="../assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
                         </a>
                     </div>
                 </div>
@@ -79,24 +80,24 @@
         </div>
 
         <button class="header-burger__btn">
-            <img src="assets/icons/burger.svg" alt="burger" class="header-burger__btn-image">
+            <img src="../assets/icons/burger.svg" alt="burger" class="header-burger__btn-image">
         </button>
     </header>
 
     <div class="burger-modal">
         <div class="burger-header">
             <a href="/" class="header-logo">
-                <img src="assets/images/logo.svg" alt="logo" class="header-logo-image">
+                <img src="../assets/images/logo.svg" alt="logo" class="header-logo-image">
             </a>
             <button class="burger-close">
-                <img src="assets/icons/close.svg" alt="close" class="burger-close__image">
+                <img src="../assets/icons/close.svg" alt="close" class="burger-close__image">
             </button>
         </div>
         <div class="burger-content">
             <div class="search-wrap">
                 <input type="text" class="search-input button" placeholder="Поиск">
                 <button class="search-btn">
-                    <img src="assets/icons/search.svg" alt="search" class="search-btn__image">
+                    <img src="../assets/icons/search.svg" alt="search" class="search-btn__image">
                 </button>
             </div>
             <nav class="burger-nav">
@@ -151,18 +152,45 @@
                 </p>
                 <div class="dropdown-social__list">
                     <a href="#" class="burger-social__item">
-                        <img src="assets/icons/tg-reverse.svg" alt="instagram" class="burger-item__image">
+                        <img src="../assets/icons/tg-reverse.svg" alt="instagram" class="burger-item__image">
                     </a>
                     <a href="#" class="burger-social__item">
-                        <img src="assets/icons/vk-reverse.svg" alt="facebook" class="burger-item__image">
+                        <img src="../assets/icons/vk-reverse.svg" alt="facebook" class="burger-item__image">
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
+    <picture class="payment-picture">
+        <source srcset="../assets/images/payment_example_mob.jpg" media="(max-width: 768px)">
+        <img src="../assets/images/payment_example.jpg" alt="payment" class="payment-image">
+    </picture>
+    
     <main class="container">
-
+        <div class="payment-wrap">
+            <div class="payment-header">
+                <h1 class="payment-title heading-h1 black fade-up">
+                    Сроки
+                </h1>
+                <aside class="payment-aside">
+                    <a href="#" class="payment-aside__btn button btn border-button active">
+                        Сроки
+                    </a>
+                    <a href="#" class="payment-aside__btn button btn border-button">
+                        Оплата
+                    </a>
+                    <a href="#" class="payment-aside__btn button btn border-button">
+                        Доставка
+                    </a>
+                </aside>
+            </div>
+            <div class="payment-content body black">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi magnam eveniet repellat illum nostrum impedit modi inventore suscipit dicta eum sint, enim recusandae velit dolore quidem odio magni assumenda numquam molestias quod consequuntur. Error consectetur explicabo ullam perspiciatis animi!
+                </p>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -190,10 +218,10 @@
                             </p>
                             <div class="dropdown-social__list">
                                 <a href="#" class="dropdown-social__item footer-social__item fade-up">
-                                    <img src="assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
+                                    <img src="../assets/icons/tg.svg" alt="instagram" class="dropdown-social__item-image">
                                 </a>
                                 <a href="#" class="dropdown-social__item footer-social__item fade-up">
-                                    <img src="assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
+                                    <img src="../assets/icons/vk.svg" alt="facebook" class="dropdown-social__item-image">
                                 </a>
                             </div>
                         </div>
@@ -263,7 +291,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-wrap">
-                    <img src="assets/icons/footer-logo.svg" alt="footer-logo" class="footer-bottom__image  fade-up">
+                    <img src="../assets/icons/footer-logo.svg" alt="footer-logo" class="footer-bottom__image  fade-up">
                     <div class="footer-bottom__nav">
                         <p class="footer-bottom__text body black fade-up">
                             2026 Copyright &copy; Каокакао все права защищены<br>
@@ -283,8 +311,8 @@
         </div>
     </footer>
 
-    <script src="assets/scripts/header.js"></script>
-    <script src="assets/scripts/animation.js"></script>
-    <script src="assets/scripts/textWalker.js"></script>
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/animation.js"></script>
+    <script src="../assets/scripts/textWalker.js"></script>
 </body>
 </html>

@@ -160,6 +160,7 @@ body {
 }
 
 .caption-small {
+    font-family: var(--font-family-secondary);
     font-size: var(--caption-small-size);
     line-height: var(--caption-small-line-height);
     font-weight: var(--caption-small-font-weight);

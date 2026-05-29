@@ -590,8 +590,50 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-
+        <section class="section cta-section">
+            <div class="cta-wrap">
+                <iframe
+                    class="cta-map"
+                    src="https://yandex.ru/map-widget/v1/?ll=39.737184%2C47.241371&mode=search&oid=1314610946&ol=biz&z=16" 
+                    allowfullscreen="true" 
+                ">
+                </iframe>
+                <div class="cta-content">
+                    <article class="cta-article">
+                        <h2 class="cta-title heading-h3 white fade-up">
+                            Остались вопросы?
+                        </h2>
+                        <p class="body cta-text white">
+                            Если у вас остались вопросы, оставьте заявку и менеджер свяжется с вам в течение 15 минут.
+                        </p>
+                    </article>
+                    <form class="global-form cta-form">
+                        <div class="global-form__item cta-form__item">
+                            <input class="global-form__input cta-form__input body gray" type="text" name="name" placeholder="Ваше имя">
+                            <span class="error-name error-input caption-small"></span>
+                        </div>
+                        <div class="global-form__item cta-form__item">
+                            <input class="global-form__input cta-form__input body gray" type="email" name="email" placeholder="nickname@mail.ru">
+                            <span class="error-email error-input caption-small"></span>
+                        </div>
+                        <div class="global-form__item cta-form__item">
+                            <input class="global-form__input cta-form__input body gray" type="tel" name="phone" placeholder="+7 (800) 555 35-55">
+                            <span class="error-phone error-input caption-small"></span>
+                        </div>
+                        <div class="global-form__item cta-form__item">
+                            <label class="global-form__label cta-form__label subtitle white">
+                                <input class="global-form__checkbox cta-form__checkbox" type="checkbox" name="agree">
+                                Я даю согласие на обработку персональных данных в соответствии с
+                                <a href="#" class="privacy-link white">политикой конфиденциальности</a>.
+                            </label>
+                            <span class="error-agree error-input caption-small"></span>
+                        </div>
+                        <!-- невидимое поле для ботов -->
+                        <input type="hidden" name="botcheck" value="">
+                        <button type="submit" class="btn button green-button cta-form__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <section class="section case-section">
             <div class="case-wrap">
@@ -610,46 +652,63 @@
                     </button>
                 </div>
             </div>
-            <div class="payment-list case-list">
-                <a href="#" class="offer-item fade-up">
-                    <div class="offer-item__picture case-item__picture">
-                        <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
-                    </div>
-                    <div class="offer-item__content">
-                        <h3 class="offer-item__title heading-h4 black">
-                            Тема статьи
-                        </h3>
-                        <p class="offer-item__text body black">
-                            Краткое описание статьи
-                        </p>
-                    </div>
-                </a>
-                <a href="#" class="offer-item fade-up">
-                    <div class="offer-item__picture case-item__picture">
-                        <img src="assets/images/payment_2.jpg" alt="offer" class="offer-item__image case-item__image">
-                    </div>
-                    <div class="offer-item__content">
-                        <h3 class="offer-item__title heading-h4 black">
-                            Тема статьи
-                        </h3>
-                        <p class="offer-item__text body black">
-                            Краткое описание статьи
-                        </p>
-                    </div>
-                </a>
-                <a href="#" class="offer-item fade-up">
-                    <div class="offer-item__picture case-item__picture">
-                        <img src="assets/images/payment_3.jpg" alt="offer" class="offer-item__image case-item__image">
-                    </div>
-                    <div class="offer-item__content">
-                        <h3 class="offer-item__title heading-h4 black">
-                            Тема статьи
-                        </h3>
-                        <p class="offer-item__text body black">
-                            Краткое описание статьи
-                        </p>
-                    </div>
-                </a>
+            <div class="case-swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="case-slide swiper-slide offer-item fade-up">
+                        <div class="offer-item__picture case-item__picture">
+                            <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
+                        </div>
+                        <div class="offer-item__content">
+                            <h3 class="offer-item__title heading-h4 black">
+                                Тема статьи
+                            </h3>
+                            <p class="offer-item__text body black">
+                                Краткое описание статьи
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="case-slide swiper-slide offer-item fade-up">
+                        <div class="offer-item__picture case-item__picture">
+                            <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
+                        </div>
+                        <div class="offer-item__content">
+                            <h3 class="offer-item__title heading-h4 black">
+                                Тема статьи
+                            </h3>
+                            <p class="offer-item__text body black">
+                                Краткое описание статьи
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="case-slide swiper-slide offer-item fade-up">
+                        <div class="offer-item__picture case-item__picture">
+                            <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
+                        </div>
+                        <div class="offer-item__content">
+                            <h3 class="offer-item__title heading-h4 black">
+                                Тема статьи
+                            </h3>
+                            <p class="offer-item__text body black">
+                                Краткое описание статьи
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="case-slide swiper-slide">
+                        <div class="offer-item__picture case-item__picture">
+                            <img src="assets/images/payment_1.jpg" alt="offer" class="offer-item__image case-item__image">
+                        </div>
+                        <div class="offer-item__content">
+                            <h3 class="offer-item__title heading-h4 black">
+                                Тема статьи
+                            </h3>
+                            <p class="offer-item__text body black">
+                                Краткое описание статьи
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="case-button-next"></div>
+                <div class="case-button-prev"></div>
             </div>
         </section>
     </main>
@@ -779,9 +838,11 @@
     <script src="assets/scripts/hero.js"></script>
     <script src="assets/scripts/sertSwiper.js"></script>
     <script src="assets/scripts/homeStarterPack.js"></script>
+    <script src="assets/scripts/homeCaseSwiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>
     <script src="assets/scripts/map.js"></script>
     <script src="assets/scripts/infinityScroll.js"></script>
+    <script src="assets/scripts/homeCta.js"></script>
 </body>
 </html>
